@@ -1,0 +1,263 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  min-height: 100vh;
+}
+
+.section-main{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url(bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+}
+
+.section-main h1{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 60px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 80px;
+}
+
+header{
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  transition: 0.6s;
+}
+
+header.sticky{
+  background: #1483D5;
+  padding: 15px 100px;
+}
+
+header .brand{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+header .menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .menu a{
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 30px;
+  padding: 0 10px;
+  border-radius: 20px;
+  transition: 0.3s;
+  transition-property: color, background;
+  padding: 10px;
+
+}
+
+header .menu a:hover{
+  color: #000;
+  background: #fff;
+}
+
+header .btn{
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+.section-two{
+  min-height: 100vh;
+  background: #001018;
+  padding: 20px 100px;
+}
+
+.section-two h2{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 30px 0;
+}
+
+.section-two p{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  margin: 30px 0;
+}
+
+@media (max-width: 1060px){
+  header .btn{
+    display: block;
+  }
+
+  header .menu{
+    position: fixed;
+    background: #1483D5;
+    flex-direction: column;
+    min-width: 400px;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    padding: 80px 50px;
+    transition: 0.5s;
+    transition-property: right;
+  }
+
+  header .menu.active{
+    right: 0;
+  }
+
+  header .menu .close-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 25px;
+  }
+
+  header .menu a{
+    display: block;
+    font-size: 20px;
+    margin: 20px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 630px){
+  .section-main h1{
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+body{
+	background: #001018;
+}
+
+.section-two a .man-vs-bee-img-home-page{
+  width: 300px;
+  outline: 2px solid #fff;
+}
+
+.section-two a .man-vs-bee-img-home-page:hover{
+  filter: brightness(80%);
+  transition: 0.5s;
+}
+
+.section-two h2{
+  margin-top: 100px;
+}
+p.credics-of-owners{
+  position: relative;
+  left: 320px;
+  top: 190px;
+  font-size: 25px;
+  text-align: justify;
+  right: 10px;
+}
+
+p.deatles-man-vs-bee{
+  font-size: 25px;
+  text-align: justify;
+  width: 100%
+}
+@media (max-width: 576px){
+  p.credics-of-owners{
+    display: none;
+  }
+}
+h3.download-sub-man_vs_bee{
+  font-size: 40px;
+  color: #00cc66;
+  padding: 10px 5px;
+}
+
+h3.download-sub-man_vs_bee:hover{
+  filter: brightness(50%);
+  transition: ease-in-out 0.5s;
+}
+
+.sub-download-links-man-vs-bee{}
+
+.sub-download-links-man-vs-bee{}
+
+
+.center-man-vs-bee{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-man-vs-bee{
+  height: 100vh;
+}
+.box-man-vs-bee{
+  width: 450px;
+  height: 350px;
+  background: #000;
+  border-radius: 20px;
+  box-sizing: 0 10px 15px rgba(0,0,0,0.365);
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.box{
+  width: 600px;
+  height: 600px;
+  background: #000;
+  border-radius: 20px;
+  box-sizing: 0 10px 15px rgba(0,0,0,0.365);
+}
+.box li{
+  width: 450px;
+  padding: 15px;
+  
+  list-style: none;
+  margin: 12px;
+}
+.box li a:hover{
+  background: #cef;
+  color: #000;
+  cursor: pointer;
+  
+}
+.box li a{
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+@media (max-width: 300px){
+  p.deatles-man-vs-bee{
+    display: none;
+  }
+}
